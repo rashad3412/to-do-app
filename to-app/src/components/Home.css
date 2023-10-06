@@ -1,0 +1,41 @@
+h2 {
+  font-weight: normal;
+
+  color: black;
+  display: flex;
+  justify-content: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(11, 206, 206);
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.inputs-prop {
+  width: 320px;
+  height: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-prop {
+  color: white;
+  background-color: rgb(11, 206, 206);
+  text-decoration: none;
+  border-radius: 10px;
+  width: 100px;
+  margin: 5px;
+}

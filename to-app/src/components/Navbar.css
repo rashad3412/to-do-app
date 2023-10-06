@@ -1,0 +1,29 @@
+* {
+  box-sizing: "border-box";
+}
+
+body {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  display: inline-block;
+  height: 100%;
+  color: white;
+  text-align: center;
+  background-color: rgb(11, 206, 206);
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 150px;
+}
