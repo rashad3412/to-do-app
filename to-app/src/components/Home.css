@@ -22,6 +22,8 @@ h2 {
 }
 
 .inputs-prop {
+  display: flex;
+  justify-content: center;
   width: 320px;
   height: 20px;
 }
@@ -38,4 +40,11 @@ h2 {
   border-radius: 10px;
   width: 100px;
   margin: 5px;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 50px;
 }
