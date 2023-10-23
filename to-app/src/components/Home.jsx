@@ -23,7 +23,23 @@ const Home = () => {
   };
 
   const HandleDateClick = () => {
-    alert(`Your setting a task on: ${date.toDateString()}`);
+    alert(
+      `Your setting a new task on: ${date.toDateString()} \n Add an task below`
+    );
+  };
+
+  const HandleEdit = (item, id) => {
+    const editList = items.filter((i) => i.id !== item)
+    const selectedItems = items.find(item => item.id === id)
+    setItem(editList)
+
+
+  };
+
+  const HandleRemove = (item) => {
+    const newList = items.filter((i) => i.id !== item);
+    setItem(newList);
+    console.log(newList);
   };
 
   return (
@@ -45,7 +61,7 @@ const Home = () => {
       <form className="inputs" onSubmit={OnSubmitHandler}>
         <input
           type="text"
-          placeholder="Add an item..."
+          placeholder="Add new task..."
           value={newItem}
           onChange={(event) => setNewItem(event.target.value)}
           className="inputs-prop"
@@ -62,6 +78,14 @@ const Home = () => {
             <li className="item" key={item.id}>
               {" "}
               {item.value}
+              <section className="btn2">
+                <span onClick={() => HandleRemove(item.id)} className="txt-btn">
+                  x
+                </span>
+                <span onClick={() => HandleEdit(item.id)} className="txt-btn">
+                  edit
+                </span>
+              </section>
             </li>
           );
         })}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const onClick = () => {
-    alert("Add an Item to do below");
+    alert("Click Calendar below to update a new task.");
   };
 
   return (
